@@ -88,6 +88,22 @@
    1. credentials
    2. s3
    3. ec2
+9. Network
+   1.  netstat
+   2.  ss
+   3.  ping
+   4.  traceroute
+10. Web developemnt
+    1.  git
+    2.  curl
+    3.  publishing a site to Apache
+    4.  What it takes to make a website use SSL
+        1.  DNS
+        2.  letsencrypt
+11. Finding what is wrong
+    1.  /var/log
+    2.  tail
+ 
 
 ### An introduction to Docker (or Podman)
 
