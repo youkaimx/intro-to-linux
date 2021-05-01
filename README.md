@@ -1,7 +1,7 @@
-# Intorduction to Linux as a development environment
+# An Introduction to Linux as a Development Environment
 
 ## Syllabus
-- [Intorduction to Linux as a development environment](#intorduction-to-linux-as-a-development-environment)
+- [An Introduction to Linux as a Development Environment](#an-introduction-to-linux-as-a-development-environment)
   - [Syllabus](#syllabus)
     - [Preliminaries](#preliminaries)
     - [Getting a Linux Environment](#getting-a-linux-environment)
