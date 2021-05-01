@@ -24,7 +24,7 @@
 1. Windows and WSL
 2. Windows and Dual Boot
 3. MacOs and BSD
-4. Linux on bare metal hardware
+4. Linux on bare metal
 5. Virtual Machines
 6. Linux on the cloud
 
@@ -36,7 +36,7 @@
    3. Port forwarding
    4. Tunneling
    5. Jump Hosts
-   6. A little bit of sysadmining:
+   6. ssh dministrativia:
       1. authorized_keys
       2. known_hosts
       3. ssh_keygen: key generation, key comments, deletion of know hosts
@@ -48,6 +48,7 @@
    2. KDE
    3. Xfce
    4. vnc and xrdp
+   5. Apache Guacamole
 
 ### Using the command line
 1. Working with files
@@ -70,39 +71,41 @@
    4. Redirecting stdin
    5. Connecting stdout to stdin
 5. Editing files
-   1. nano
-   2. vi
+   1. `nano`
+   2. `vi`
 6. Other useful commands
-   1. cut
-   2. awk
-   3. grep
-   4. xargs
-7. An introduction to bash shell scripting
+   1. `cut`
+   2. `awk`
+   3. `grep`
+   4. `xargs`
+7. An Introduction to `bash` Shell Scripting
    1. hash bang
-   2. echo
+   2. `echo`
    3. variables
-   4. if
-   5. for
-   6. while
-8. An Introduction to awscli
-   1. credentials
-   2. s3
-   3. ec2
+   4. `if`
+   5. `for`
+   6. `while`
+8. An Introduction to `awscli`
+   1. credentials and profiles
+   2. `s3`
+   3. `ec2`
 9. Network
-   1.  netstat
-   2.  ss
-   3.  ping
-   4.  traceroute
+   1.  `netstat`
+   2.  `ss`
+   3.  `ping`
+   4.  `traceroute`
+   5.  `nslookup`
+   6.  `dig`
 10. Web developemnt
-    1.  git
-    2.  curl
-    3.  publishing a site to Apache
+    1.  `git`
+    2.  `curl`
+    3.  Publishing a site with Apache Web Server
     4.  What it takes to make a website use SSL
         1.  DNS
-        2.  letsencrypt
+        2.  Lets Encrypt
 11. Finding what is wrong
-    1.  /var/log
-    2.  tail
+    1.  `/var/log`
+    2.  `tail`
  
 
 ### An introduction to Docker (or Podman)
