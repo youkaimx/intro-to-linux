@@ -1,11 +1,14 @@
-# Intorduction to Linux
+# Intorduction to Linux as a development environment
 
 ## Syllabus
-- [Intorduction to Linux](#intorduction-to-linux)
+- [Intorduction to Linux as a development environment](#intorduction-to-linux-as-a-development-environment)
   - [Syllabus](#syllabus)
     - [Preliminaries](#preliminaries)
     - [Getting a Linux Environment](#getting-a-linux-environment)
     - [Logging into linux](#logging-into-linux)
+    - [Using the command line](#using-the-command-line)
+    - [An introduction to Docker (or Podman)](#an-introduction-to-docker-or-podman)
+    - [An introduction to Ansible](#an-introduction-to-ansible)
 
 ### Preliminaries
 1. What is Linux and kernels in general
@@ -45,4 +48,47 @@
    2. KDE
    3. Xfce
    4. vnc and xrdp
-5. 
+
+### Using the command line
+1. Working with files
+   1. Listing files
+   2. Permissions and ACLs
+   3. Special permissions: Set UID, Set GID
+   4. Creating directories (folders)
+   5. Current and parent directories
+   6. Full and relative paths
+2. Getting help
+   1. The `man` command
+   2. The `apropos` command
+3. Finding things
+   1. The `whereis` command
+   2. The `find` command
+4. Connecting commands
+   1. stdin, stdout, stderr
+   2. Redirecting stdout
+   3. Redirecting stderr
+   4. Redirecting stdin
+   5. Connecting stdout to stdin
+5. Editing files
+   1. nano
+   2. vi
+6. Other useful commands
+   1. cut
+   2. awk
+   3. grep
+   4. xargs
+7. An introduction to bash shell scripting
+   1. hash bang
+   2. echo
+   3. variables
+   4. if
+   5. for
+   6. while
+8. An Introduction to awscli
+   1. credentials
+   2. s3
+   3. ec2
+
+### An introduction to Docker (or Podman)
+
+### An introduction to Ansible
