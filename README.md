@@ -12,6 +12,10 @@
 
 ### Preliminaries
 1. What is Linux and kernels in general
+   
+   [Linux](https://en.wikipedia.org/wiki/Linux)
+
+   [Kernels](https://en.wikipedia.org/wiki/Kernel_(operating_system))
 2. Base programs and the GNU Project
 3. Free Software and Open Source Software
 4. Linux Distributions
