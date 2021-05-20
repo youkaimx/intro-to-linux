@@ -19,23 +19,28 @@
 
 2. Base programs and the GNU Project
 
-About [coreutils](https://github.com/coreutils/coreutils)
-```
-The programs that can be built with this package are:
 
-  arch b2sum base32 base64 basename basenc cat chcon chgrp chmod chown
-  chroot cksum comm coreutils cp csplit cut date dd df dir dircolors dirname
-  du echo env expand expr factor false fmt fold groups head hostid hostname
-  id install join kill link ln logname ls md5sum mkdir mkfifo mknod mktemp
-  mv nice nl nohup nproc numfmt od paste pathchk pinky pr printenv printf ptx
-  pwd readlink realpath rm rmdir runcon seq sha1sum sha224sum sha256sum
-  sha384sum sha512sum shred shuf sleep sort split stat stdbuf stty sum sync
-  tac tail tee test timeout touch tr true truncate tsort tty uname unexpand
-  uniq unlink uptime users vdir wc who whoami yes
-  ```
+   Beside the kernel, the base programs bundled with the Linux distributions are the GNU utils. Below are some of those programs belonging to the repo `coreutils`
+   About [coreutils](https://github.com/coreutils/coreutils)
+   ```
+   The programs that can be built with this package are:
+
+   arch b2sum base32 base64 basename basenc cat chcon chgrp chmod chown
+   chroot cksum comm coreutils cp csplit cut date dd df dir dircolors dirname
+   du echo env expand expr factor false fmt fold groups head hostid hostname
+   id install join kill link ln logname ls md5sum mkdir mkfifo mknod mktemp
+   mv nice nl nohup nproc numfmt od paste pathchk pinky pr printenv printf ptx
+   pwd readlink realpath rm rmdir runcon seq sha1sum sha224sum sha256sum
+   sha384sum sha512sum shred shuf sleep sort split stat stdbuf stty sum sync
+   tac tail tee test timeout touch tr true truncate tsort tty uname unexpand
+   uniq unlink uptime users vdir wc who whoami yes
+   ```
+
+   Programs like C and C++ compilers and the vi editor are also part of the GNU Projects
+
 
 3. Free Software and Open Source Software
-4. Linux Distributions
+2. Linux Distributions
    1. Debian Based
    2. Red Hat
    3. Notable Distributions
@@ -46,11 +51,23 @@ The programs that can be built with this package are:
       5. [CentOS](https://www.centos.org)
       6. [Pop!_OS](https://pop.system76.com)
       7. [Arch](https://archlinux.org)
-5. A quick note about hardware architectures
+3. A quick note about hardware architectures
    1. X86 X64
    2. ARM
 ### Getting a Linux Environment
 1. Windows and WSL
+
+   To setup WSL on your Windows 10 machine, follow [this guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10). I also consider the Microsoft Terminal ([project](https://github.com/Microsoft/Terminal), [setup guide](https://docs.microsoft.com/en-us/windows/terminal/get-started)) an integral part of the Linux on Windows experience. 
+   
+   Once installed, you can select one of the several terminal types
+   ![Microsoft Terminal](images/microsoft.terminal.menu.png)
+
+
+
+   Also, the shortcuts can be learned with the Command Palette with `Ctrl`-`Shift`-`P` ![Microsoft Terminal Command Palette](images/microsoft.terminal.command.palette.png)
+
+
+
 2. Windows and Dual Boot
 3. MacOs and BSD
 4. Linux on bare metal
