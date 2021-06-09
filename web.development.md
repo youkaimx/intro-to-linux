@@ -12,6 +12,7 @@ Ubuntu allows for the installation of packages via the `apt` program. This requi
 * The configuration is located in `/etc/apache2`
 * The default website is located at `/var/www/html`
 * The default owner and group for apache is `www-data`
+* Logs are located in `/var/log/apache2`
 
 ## Setup of a basic website
 * Create a new directory for the websites: `sudo mkdir /websites`
@@ -35,12 +36,6 @@ ubuntu@ip-172-31-23-47:/etc/apache2/sites-available$ cat miguel.usuariolinux.org
 
         ErrorLog ${APACHE_LOG_DIR}/miguel.usuariolinux.org.error.log
         CustomLog ${APACHE_LOG_DIR}/miguel.usuariolinux.org.access.log combined
-        #ProxyRequests Off
-        #ProxyPreserveHost On
-        #ProxyVia Full
-        #<Proxy *>
-        #         Require all granted
-        #</Proxy>
         ProxyPass / http://127.0.0.1:3000/
         ProxyPassReverse / http://127.0.0.1:3000/
 
