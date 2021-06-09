@@ -21,13 +21,26 @@ Ubuntu allows for the installation of packages via the `apt` program. This requi
 * Install the node package manager: `sudo apt install npm`
 * Change into the new directory and install dependencies: `cd /websites/user-api-demo;npm install`
 * Start the development webserver: `npm start dev`
+```
+ubuntu@ip-172-31-23-47:/websites/user-api-demo$ npm run dev
+
+> user-api-demo@1.0.0 dev /websites/user-api-demo
+> cross-env DEBUG=app:* nodemon index
+
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node index index.js`
+Listening at http://localhost:3000
+```
 This starts a development server in port 3000. Follow the readme in https://github.com/miguelhuchim05/user-api-demo to use the site:
 
 ## Setup of a reverse proxy
 * Enable the proxy module: `sudo a2enmod proxy`
 * Enable the http proxy module: `sudo a2enmod proxy_http`
-* Restart apache to load the modules: `sudo systemct restart apache2`
-* Create a new config file `miguel.usuariolinux.org.conf` in `/etc/apache2/sites-available:
+* Restart apache to load the modules: `sudo systemctl restart apache2`
+* Create a new config file `miguel.usuariolinux.org.conf` in `/etc/apache2/sites-available`:
 ```
 ubuntu@ip-172-31-23-47:/etc/apache2/sites-available$ cat miguel.usuariolinux.org.conf
 <VirtualHost *:80>
