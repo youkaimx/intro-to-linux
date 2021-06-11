@@ -84,7 +84,7 @@ Listening at http://localhost:3000
 
 On our computer we can use the API as intented
 ```bash
-curl -d '{ "email": "foobar@gmail.com", "first_name": "foo", "last_name": "bar", "company": "temporal" }' -H "Content-Type: application/json" -X POST http://localhost/api/user
+curl -d '{ "email": "foobar@gmail.com", "first_name": "foo", "last_name": "bar", "company": "temporal" }' -H "Content-Type: application/json" -X POST http://localhost:3000/api/user
 ``` 
 
 To exit the interactive terminal, you can use CTRL-C
