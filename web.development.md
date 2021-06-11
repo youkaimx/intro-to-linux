@@ -1,6 +1,6 @@
 # Web Development
 
-This is the documentation and command log for the setup of an inverse proxy webserver for the site `miguel.usuariolinux.org` (this name was made up) to server via HTTP the development website for the [Node API example](https://github.com/miguelhuchim05/user-api-demo) provided by Ing. Miguel Huchim.
+This is the documentation and command log for the setup of an inverse proxy webserver for the site `miguel.usuariolinux.org` (this name was made up) to serve (via HTTP) the development website for the [Node API example](https://github.com/miguelhuchim05/user-api-demo) provided by Ing. Miguel Huchim.
 
 ![Node API via Apache Inverse Proxy](images/Node.API.via.Apache.Inverse.Proxy.png)
 
