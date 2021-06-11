@@ -1,5 +1,10 @@
 # Web Development
 
+This is the documentation and command log for the setup of an inverse proxy webserver for the site `miguel.usuariolinux.org` (this name was made up) to server via HTTP the development website for the [Node API example](https://github.com/miguelhuchim05/user-api-demo) provided by Ing. Miguel Huchim.
+
+![Node API via Apache Inverse Proxy](images/Node.API.via.Apache.Inverse.Proxy.png)
+
+
 ## Installation of packages
 Ubuntu allows for the installation of packages via the `apt` program. This requires elevated privileges so you have to precede the `apt` command with `sudo`
 
@@ -16,7 +21,7 @@ Ubuntu allows for the installation of packages via the `apt` program. This requi
 
 ## Setup of a basic website
 * Create a new directory for the websites: `sudo mkdir /websites`
-* Change the owner to ubuntu:www-data: `sudo chown -R ubuntu:www-data /websites
+* Change the owner to ubuntu:www-data: `sudo chown -R ubuntu:www-data /websites`
 * Change to /websites and clone a repo: `cd /websites;git clone https://github.com/miguelhuchim05/user-api-demo.git`
 * Install the node package manager: `sudo apt install npm`
 * Change into the new directory and install dependencies: `cd /websites/user-api-demo;npm install`
@@ -34,7 +39,7 @@ ubuntu@ip-172-31-23-47:/websites/user-api-demo$ npm run dev
 [nodemon] starting `node index index.js`
 Listening at http://localhost:3000
 ```
-This starts a development server in port 3000. Follow the readme in https://github.com/miguelhuchim05/user-api-demo to use the site:
+This starts a development server in port 3000. Follow the readme in https://github.com/miguelhuchim05/user-api-demo to use the API.
 
 ## Setup of a reverse proxy
 * Enable the proxy module: `sudo a2enmod proxy`
