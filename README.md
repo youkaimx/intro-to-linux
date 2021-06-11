@@ -193,18 +193,21 @@
    7.  `traceroute`
    8.  `nslookup`
    9.  `dig`
-11. Web developemnt
+11. Web development
     1.  `git`
     2.  `curl`
     3.  Publishing a site with Apache Web Server
     4.  What it takes to make a website use SSL
         1.  DNS
         2.  Lets Encrypt
-12. Finding what is wrong
+
+[Notes](web.development.md)
+1.  Finding what is wrong
     1.  `/var/log`
     2.  `tail`
  
 
 ### An introduction to Docker (or Podman)
+[Notes](containers.intro.md)
 
 ### An introduction to Ansible
