@@ -46,7 +46,7 @@ In `FROM node:latest` we announce that we're basing our container on the node.
 
 If you save this file with name `Dockerfile-user-api-demo` in the folder created by the repo cloning, we can actually build our container with this command: 
 
-```
+```bash
 docker build . -t user-api-demo:1.0 -f Dockerfile-user-api-demo
 [+] Building 7.7s (9/9) FINISHED
  => [internal] load build definition from Dockerfile-user-api-demo                                                                                            0.0s
@@ -68,7 +68,7 @@ docker build . -t user-api-demo:1.0 -f Dockerfile-user-api-demo
 
 To serve it using an "interactive terminal" (-it) and mapping the exposed port 3000 from the container to our computer's port 3000 (-p 3000:3000) we use
 
-```
+```bash
 docker run -it --rm -p 3000:3000 user-api-demo:1.0
 
 > user-api-demo@1.0.0 dev
@@ -83,7 +83,8 @@ Listening at http://localhost:3000
 ```
 
 On our computer we can use the API as intented
-```curl -d '{ "email": "foobar@gmail.com", "first_name": "foo", "last_name": "bar", "company": "temporal" }' -H "Content-Type: application/json" -X POST http://localhost/api/user
+```bash
+curl -d '{ "email": "foobar@gmail.com", "first_name": "foo", "last_name": "bar", "company": "temporal" }' -H "Content-Type: application/json" -X POST http://localhost/api/user
 ``` 
 
 To exit the interactive terminal, you can use CTRL-C
@@ -111,7 +112,7 @@ ProxyPassReverse / http://apimiguel:3000/
 ```
 That assumes that there's a host named apimiguel serving content via the HTTP protocol at port 3000.
 We create the container image using [this dockerfile](conf/Dockerfile_httpd_reverse_proxy): 
-```
+```dockerfile
 FROM httpd:latest
 COPY my-httpd.conf /usr/local/apache2/conf/httpd.conf
 EXPOSE 80
@@ -119,7 +120,7 @@ CMD httpd -D FOREGROUND
 ```
 
 To actually create the image:
-```
+```bash
 docker build . -t httpd_inverse_proxy:1.0 -f Dockerfile_httpd_reverse_proxy
 [+] Building 0.3s (7/7) FINISHED
  => [internal] load build definition from Dockerfile_httpd_reverse_proxy                                                            0.1s
@@ -138,12 +139,12 @@ docker build . -t httpd_inverse_proxy:1.0 -f Dockerfile_httpd_reverse_proxy
  ```
 
 To create the container, we depend on the node container having a name of apimiguel, so if we havent already, stop the node container and start it again with this command
-```
+```bash
 docker run -it --rm -p 3000:3000 --name apimiguel user-api-demo:1.0
 ```
 
 Now the inverse proxy:
-```
+```bash
 docker run -it --rm -p 80:80 --link apimiguel httpd_inverse_proxy:1.0
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
